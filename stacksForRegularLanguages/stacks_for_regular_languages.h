@@ -195,6 +195,7 @@ bool stacks_for_regular_languages<T>::L4(char* inputString) {
 	//if not equal return false
 	if (inputString != checkStr) return false;
 
+	//has an incomplete pattern, so language is invalid
 	if (foundB == false) return false;
 
 	//if strings are equal and each individual pattern is l2 case, then return true
