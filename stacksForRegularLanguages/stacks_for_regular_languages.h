@@ -105,19 +105,19 @@ bool stacks_for_regular_languages<T>::L3(char* inputString) {
 	//if does not start with A, automatically false
 	if (first != 'A') return false;
 
-	//iterate string...find pattern, concentate pattern to string, push string to stack
+	//iterate string...find pattern, concatenate pattern to string, push string to stack
 	for (char *it = inputString; *it; ++it) {
 		//automatically false case
 		if ((*it != 'A') && (*it != 'B')) return false;
 
-		//found A...start string concenation 
+		//found A...start string concatenation 
 		if (foundB == false) {
 			if (*it == 'A') containsPattern += *it;
 			else foundB = true;
 		}
 
 		//if iterator is A, pattern is finished, push pattern to stacks for later
-		//else iterator is on a B, so continue string concenation
+		//else iterator is on a B, so continue string concatenation
 		if (foundB == true) {
 			if (*it == 'A') {
 				pattern.push(containsPattern);
@@ -161,19 +161,19 @@ bool stacks_for_regular_languages<T>::L4(char* inputString) {
 	//if does not start with A, automatically false
 	if (first != 'A') return false;
 
-	//iterate string...find pattern, concentate pattern to string, push string to stack
+	//iterate string...find pattern, concatenate pattern to string, push string to stack
 	for (char *it = inputString; *it; ++it) {
 		//automatically false case
 		if ((*it != 'A') && (*it != 'B')) return false;
 
-		//found A...start string concenation 
+		//found A...start string concatenation 
 		if (foundB == false) {
 			if (*it == 'A') containsPattern += *it;
 			else foundB = true;
 		}
 
 		//if iterator is A, pattern is finished, push pattern to stacks for later
-		//else iterator is on a B, so continue string concenation
+		//else iterator is on a B, so continue string concatenation
 		if (foundB == true) {
 			if (*it == 'A') {
 				pattern.push(containsPattern);
@@ -188,7 +188,7 @@ bool stacks_for_regular_languages<T>::L4(char* inputString) {
 	pattern.push(containsPattern);
 	pattern2.push(containsPattern);
 
-	//concenate new string of last stack entry
+	//concatenate new string of last stack entry
 	while (!pattern.isEmpty()) checkStr += pattern.pop();
 
 	//WANT: inputString == postString
