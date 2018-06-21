@@ -15,12 +15,12 @@ int main()
 	s.push(10);
 	s.push(20);
 
-	std::cout << s.peek() << " ";
+	/*std::cout << s.peek() << " ";
 	while (!s.isEmpty())
 	{
 		std::cout << s.pop() << " ";
 	}
-	std::cout << s.isEmpty() << " ";
+	std::cout << s.isEmpty() << " ";*/
 
 	//Output - 20 20 10 1
 
