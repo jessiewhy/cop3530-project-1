@@ -15,23 +15,23 @@ int main()
 	s.push(10);
 	s.push(20);
 
-	std::cout << s.peek() << " ";
+	/*std::cout << s.peek() << " ";
 	while (!s.isEmpty())
 	{
 		std::cout << s.pop() << " ";
 	}
 	std::cout << s.isEmpty() << " ";
 
-	//Output - 20 20 10 1
+	//Output - 20 20 10 1*/
 
 	/*-------- End of Testing stack_p1 ------- */
 
 	/*-------- Testing L1, L2, L3, L4 ------- */
 
-	char arr1[10] = "ABABBA";
-	char arr2[10] = "AAABBB";
-	char arr3[10] = "ABAB";
-	char arr4[10] = "ABBABB";
+	char arr1[20] = "AABBBAABBB";
+	char arr2[20] = "AABBBAABBB";
+	char arr3[20] = "AABBBAABBB";
+	char arr4[20] = "AABBBAABBB";
 
 	stacks_for_regular_languages<char> obj;
 
